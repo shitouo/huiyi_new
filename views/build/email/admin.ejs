@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理界面</title>
+</head>
+<body>
+<form action="info.asp" method="post" id="thisform" name="thisform">
+    <input type="hidden" id="actiontype" name="actiontype" value="">
+    <input type="hidden" id="code" name="code" value="">
+    <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#EAE6E5">
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff" align="center"><strong>注册信息查看</strong></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="787" align="center">
+                    <tbody>
+                    <tr>
+                        <td><table width="100%" border="1" cellspacing="0" cellpadding="0">
+
+                                <tr>
+                                    <td align="center" valign="top">参会城市</td>
+                                    <td align="center" valign="top">姓名</td>
+                                    <td align="center" valign="top">公司</td>
+                                    <td align="center" valign="top">职务</td>
+                                    <td align="center" valign="top">手机</td>
+                                    <td align="center" valign="top">邮箱</td>
+                                    <td align="center" valign="top">注册时间</td>
+                                </tr>
+                                <% for(var i = 0,len = list_info.length; i < len; i++) {%>
+                                    <tr>
+                                        <td><%=list_info[i].city%></td>
+                                        <td><%=list_info[i].username%></td>
+                                        <td><%=list_info[i].company%></td>
+                                        <td><%=list_info[i].duty%></td>
+                                        <td><%=list_info[i].tel%></td>
+                                        <td><%=list_info[i].email%></td>
+                                        <td><%=list_info[i].regtime%></td>
+                                    </tr>
+                                <%}%>>
+                                <tr>
+                                    <td colspan="7" style="height:30px" align="center">
+                                        共1481条记录&nbsp;&nbsp;第2/75页&nbsp;&nbsp;20条/页 &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;<a href="#1" onclick=" return turnpage('1')">首页</a>
+                                        &nbsp;&nbsp;<a href="#1" onclick=" return turnpage('1')">上一页</a>
+                                        &nbsp;&nbsp;<a href="#3" onclick=" return turnpage('3')">下一页</a>
+                                        &nbsp;&nbsp;<a href="#75" onclick=" return turnpage('75')">尾页</a>
+                                        <INPUT id=page class=inputbox name=page style="WIDTH: 30px; HEIGHT: 18px" size=3 type="hidden">
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td style="padding-top:5px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:5px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><a href="down_userlist.asp">导出数据>></a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:10px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

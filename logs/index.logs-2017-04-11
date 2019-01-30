@@ -1,0 +1,320 @@
+[2017-04-11 00:01:25.709] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:02:32.240] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:12:49.161] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'likeff@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:13:11.455] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:13:37.678] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ff@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:15:55.693] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:16:17.084] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:16:43.023] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qq.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:24:05.651] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@11.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+[2017-04-11 00:26:21.118] [ERROR] index - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@11.com' at line 1
+    at Query.Sequence._packetToError (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\mukai\mukai\proxy\mysql.js:125:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\mukai\mukai\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }

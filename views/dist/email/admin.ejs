@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理界面</title>
+    <style>
+        .odd {
+            background-color: gainsboro;
+        }
+        .even {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#EAE6E5">
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff" align="center"><strong>注册信息查看</strong></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="787" align="center">
+                    <tbody>
+                    <tr>
+                        <td><table width="100%" border="1" cellspacing="0" cellpadding="0">
+
+                                <tr style="font-weight: bold;background-color: bisque;">
+                                    <td align="center" valign="center" width="80px">参会城市</td>
+                                    <td align="center" valign="center" width="60px">姓名</td>
+                                    <td align="center" valign="center" width="100px">公司</td>
+                                    <td align="center" valign="center" width="80px">职务</td>
+                                    <td align="center" valign="center">手机</td>
+                                    <td align="center" valign="center">邮箱</td>
+                                    <td align="center" valign="center">注册时间</td>
+                                </tr>
+                                <% for(var i = 0,len = list_info.length; i < len; i++) {%>
+                                    <tr class="<%=i % 2 === 0 ? '':'odd'%>">
+                                        <td><%=list_info[i].city%></td>
+                                        <td><%=list_info[i].username%></td>
+                                        <td><%=list_info[i].company%></td>
+                                        <td><%=list_info[i].duty%></td>
+                                        <td><%=list_info[i].tel%></td>
+                                        <td><%=list_info[i].email%></td>
+                                        <td><%=list_info[i].regtime%></td>
+                                    </tr>
+                                <%}%>
+                                <tr>
+                                    <td colspan="7" style="height:30px" align="center">
+                                        共<%=total_count%>条记录&nbsp;&nbsp;第<%=now_page%>/<%=Math.ceil(total_count/count_perpage)%>页&nbsp;&nbsp;<%=count_perpage%>条/页 &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;<a href="/admin/1">首页</a>
+                                        &nbsp;&nbsp;<a href="javascript:;" id="prev">上一页</a>
+                                        &nbsp;&nbsp;<a href="javascript:;" id="next">下一页</a>
+                                        &nbsp;&nbsp;<a href="/admin/<%=Math.ceil(total_count/count_perpage)%>" onclick=" return turnpage('75')">尾页</a>
+                                        <INPUT id="page" class="inputbox" name="page" style="WIDTH: 30px; HEIGHT: 18px" type="hidden" data-counttotal="<%=Math.ceil(total_count/count_perpage)%>">
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td style="padding-top:5px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:5px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><a href="/down/<%=now_page%>">导出数据>></a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:10px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table></td>
+        </tr>
+    </table>
+<script>
+    window.onload = function () {
+        var dPrevBtn = document.getElementById('prev');
+        var dNextBtn = document.getElementById('next');
+        var nNowPage = 1;
+        var nTotalPage = document.getElementById('page').getAttribute('data-counttotal')
+
+        dPrevBtn.onclick = function () {
+            if (nNowPage <= 1) {
+                return false;
+            }
+            nNowPage--;
+            window.location.href = '/admin/' + nNowPage;
+        };
+        dNextBtn.onclick = function () {
+            if (nNowPage >= nTotalPage) {
+                return false;
+            }
+            nNowPage++;
+            window.location.href = '/admin/' + nNowPage;
+        }
+    }
+</script>
+</body>
+</html>

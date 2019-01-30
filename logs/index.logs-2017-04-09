@@ -1,0 +1,15 @@
+[2017-04-09 13:53:55.366] [ERROR] index - { Error: ENOENT: no such file or directory, open 'D:\life\life_work\download\人员注册数据.xls'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\life\\life_work\\download\\人员注册数据.xls' }
+[2017-04-09 14:05:56.759] [ERROR] index - { Error: ENOENT: no such file or directory, stat 'D:\life\life_work\download\人员注册数据.xls'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'D:\\life\\life_work\\download\\人员注册数据.xls',
+  expose: false,
+  statusCode: 404,
+  status: 404 }

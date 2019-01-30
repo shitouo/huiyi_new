@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>ITI中国</title>
+	<link rel="stylesheet" type="text/css" href="./common.css">
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script>
+		var dpr = window.devicePixelRatio;
+		document.documentElement.setAttribute("class","iosx"+dpr);
+		if(document.documentElement.clientWidth <= 800){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+		}else{
+			document.documentElement.style.fontSize = '100px';
+		}
+	</script>
+</head>
+<body>
+	<div class="m-container">
+		<div class="banner">
+			<img src="./banner.jpg" class="banner">
+		</div>
+		<div class="respect">
+			<p class="first">尊敬的嘉宾，您好！</p>
+			<p class="second">感谢您为ITI中国分会送上的诚挚祝福，请上传您拍摄的视频，并留下联系方式，我们将通过抽奖的方式送出精美礼品。感谢您的参与！</p>
+		</div>
+		<div class="submit-title">
+			请提交您的信息和视频
+		</div>
+		<form name="theform" style="display: block;" class="info-form">
+			<input style="display: none" type="radio" name="myradio" value="local_name" checked=true/>
+			<input style="display: none" type="radio" name="myradio" value="random_name" />
+			<span>城市</span> <input type="text" id='province' placeholder="" size=50><span class="province-text">省</span> <input type="text" id='city' placeholder="" size=50><span class="city-text">市</span><br>
+			<span>单位</span> <input type="text" id='dirname' placeholder="" size=50 class="input-common">
+			<br>
+			<span>姓名</span> <input type="text" id='username' placeholder="" size=50 class="input-common"><br>
+			<span>电话</span> <input type="text" id='telephone' placeholder="" size=50 class="input-common"><br>
+			<span>邮箱</span> <input type="text" id='email' placeholder="" size=50 class="input-common"><br>
+			<div class="error" id="error"></div>
+		</form>
+				
+		<div id="ossfile">你的浏览器不支持flash,Silverlight或者HTML5！</div>
+				
+		<br/>
+				
+		<div id="container">
+			<a id="selectfiles" href="javascript:void(0);" class='btn'>选择视频</a>
+			<a id="postfiles" href="javascript:void(0);" class='btn'>开始提交</a>
+		</div>
+				
+		<pre id="console"></pre>
+				
+		<div class="tips">
+			<div class="title">温馨提示：</div>
+			<p class="tips-text">1、视频分辨率建议为1920*1080，不能低于1280*720；</p>
+			<p class="tips-text">2、视频格式需为MOV或MP4；</p>
+			<p class="tips-text">3、视频画面比例为16:9（如用手机，请以横屏方式拍摄）</p>
+		</div>
+	</div>
+</body>
+<script>
+	var inputs = document.getElementsByTagName('input')
+	for(var i = 0; i < inputs.length; i++) {
+		var item = inputs[i]
+		item.oninput = function () {
+			document.getElementById('error').innerHTML = ''
+		}
+	}
+</script>
+<script type="text/javascript" src="./crypto.js"></script>
+<script type="text/javascript" src="./hmac.js"></script>
+<script type="text/javascript" src="./sha1.js"></script>
+<script type="text/javascript" src="./base64.js"></script>
+<script type="text/javascript" src="./plupload.full.min.js"></script>
+<script type="text/javascript" src="./upload.js"></script>
+</html>

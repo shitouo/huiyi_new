@@ -1,0 +1,764 @@
+html {
+  font-size: 62.5%;
+}
+body,
+input,
+select,
+textarea {
+  font-family: "PingFangSC", "Microsoft YaHei", "微软雅黑", Arial, HelveticaNeue, Helvetica, sans-serif;
+}
+body {
+  padding: 0 16px;
+  background-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #4d4d4d;
+  margin: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu,
+label {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+@media screen and (min-width: 769px) {
+  #m-container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+.slide_hide {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.slide_show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.none {
+  display: none;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line-2 {
+  -webkit-line-clamp: 2;
+}
+.line-6 {
+  -webkit-line-clamp: 6;
+}
+.vertical-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'TrebuchetMS-Regular';
+  src: url('../../../fonts/TrebuchetMS-Regular/TrebuchetMS-Regular.eot');
+  src: url('../../../fonts/TrebuchetMS-Regular/TrebuchetMS-Regular.eot?#iefix') format('embedded-opentype'), url('../../../fonts/TrebuchetMS-Regular/TrebuchetMS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+#topBarContent {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+#topBarContent .top-bar {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  color: #fff;
+}
+#topBarContent .top-bar .logo,
+#topBarContent .top-bar .label,
+#topBarContent .top-bar .open,
+#topBarContent .top-bar .btn-close {
+  position: absolute;
+  top: 50%;
+}
+#topBarContent .top-bar .logo {
+  height: 40px;
+  width: 40px;
+  left: 15px;
+  background: url("/public/build/img/activity/common/logo.png") no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+#topBarContent .top-bar .label {
+  left: 64px;
+  color: #fff;
+  margin-top: -20px;
+}
+#topBarContent .top-bar .label .app-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+#topBarContent .top-bar .label .slogan {
+  margin-top: 5px;
+  font-size: 13px;
+}
+#topBarContent .top-bar .open {
+  right: 39px;
+  width: 77px;
+  font-size: 13px;
+  line-height: 30px;
+  border-radius: 14.5px;
+  background: #fad63a;
+  display: inline-block;
+  color: #5b4a00;
+  text-align: center;
+  margin-top: -13px;
+}
+#topBarContent .top-bar .btn-close {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url("/public/build/img/activity/common/btn-close.png") 0 0 no-repeat;
+  background-size: 100%;
+  right: 12px;
+  margin-top: -8px;
+}
+.relate-content {
+  font-size: 0;
+  padding: 0 0.3rem;
+  padding-top: 60px;
+}
+.relate-content .title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.relate-content .title::before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 8px;
+  background-color: rgba(255, 202, 5, 0.4);
+  position: absolute;
+  z-index: -1;
+  top: 9px;
+  margin-left: -10%;
+}
+.relate-content#commentsContent .comments {
+  padding: 15px 0;
+}
+.relate-content#commentsContent .comments .comment {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.relate-content#commentsContent .comments .comment .avatar {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('/public/build/img/activity/common/logo.png') 0 0 no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.relate-content#commentsContent .comments .comment .name {
+  font-size: 13px;
+  color: #9c9c9c;
+  margin-left: 45px;
+  max-width: 50%;
+}
+.relate-content#commentsContent .comments .comment .comment-time {
+  margin-top: 3px;
+  margin-left: 45px;
+  font-size: 12px;
+  color: #b5b5b5;
+}
+.relate-content#commentsContent .comments .comment .content {
+  margin-left: 44px;
+  padding-top: 13px;
+}
+.relate-content#commentsContent .comments .comment .content .comment-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  max-height: 100%;
+}
+.relate-content#commentsContent .comments .comment .content .read-more {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: justify;
+  color: #b5b5b5;
+}
+.relate-content#commentsContent .comments .comment .btn-comment-like {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 13px;
+  color: #b5b5b5;
+}
+.relate-content#commentsContent .comments .comment .btn-comment-like .icon-like {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background: 0 0 no-repeat;
+  background-size: 100%;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+.relate-content#commentsContent .comments .comment .btn-comment-like .icon-like.off {
+  background-image: url("/public/build/img/activity/common/btn-like-gray.png");
+}
+.relate-content#recommendContent .recommends {
+  position: relative;
+}
+.relate-content#recommendContent .recommends .recommend {
+  position: relative;
+  border-bottom: solid 0.5px #eeeeee;
+  padding: 12px 0;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link {
+  display: block;
+  position: relative;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .desc {
+  width: 65%;
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .desc .relate-article-title,
+.relate-content#recommendContent .recommends .recommend .recommend-link .desc .relate-article-info {
+  margin-right: 27px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .img-wrapper {
+  width: 35%;
+  height: 0;
+  padding-top: 26.25%;
+  background: url("/public/build/img/activity/common/default-pic.png") 0 0 no-repeat;
+  background-size: cover;
+  background-color: #eee;
+  position: relative;
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .img-wrapper .video-time {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 50px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: rgba(0, 0, 0, 0.59);
+  color: #FFFFFF;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .img-wrapper .video-time .triangle {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 6px solid #ffffff;
+  border-bottom: 4px solid transparent;
+  display: inline-block;
+  margin-left: 6px;
+  margin-bottom: 1px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .img-wrapper .video-time .video-long {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 3px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper {
+  position: relative;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list {
+  margin-top: 7px;
+  font-size: 0;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list li {
+  width: 33%;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list li:first-child {
+  padding-right: 2px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list li:last-child {
+  padding-left: 2px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list li .image-box {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  background: url("/public/build/img/activity/common/default-pic.png") 0 0 no-repeat;
+  background-size: cover;
+  background-color: #eee;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .images-wrapper .images-list li .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-title {
+  -webkit-box-orient: vertical;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-info {
+  padding-top: 9px;
+  font-size: 12px;
+  color: #b5b5b5;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-info.half {
+  position: absolute;
+  bottom: 0;
+  width: 65%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-info.half .relate-article-info-content {
+  margin-right: 27px;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-info .relate-article-source {
+  float: left;
+}
+.relate-content#recommendContent .recommends .recommend .recommend-link .relate-article-info .relate-article-comments-num {
+  float: left;
+  margin-left: 0.16rem;
+}
+.relate-content#recommendContent .recommends .recommend.text .recommend-link .desc {
+  width: 100%;
+  float: none;
+}
+.relate-content#recommendContent .recommends .recommend.text .recommend-link .desc .relate-article-title {
+  margin: 0;
+}
+.relate-content#recommendContent .recommends .recommend.text .recommend-link .relate-article-info {
+  margin-top: 10px;
+}
+.relate-content#recommendContent .recommend-more {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  margin: 20px 0 40px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #fad63a;
+  border-radius: 4px;
+}
+.comments-more {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #fad63a;
+  border-radius: 4px;
+  margin: 0 0.3rem;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4000;
+}
+.android {
+  background: url("/public/build/img/activity/share/layer.png") #f3f3f3 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.ios {
+  background: url('/public/build/img/activity/share/layerios.png') #fff no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.show {
+  display: block;
+}
+.none {
+  display: none;
+}
+#betContent {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+  font-family: PingFangSC-Regular;
+}
+#betContent .bet-detail-area {
+  width: 100%;
+  position: relative;
+}
+#betContent .bet-detail-area .bet-cover-area {
+  width: 100%;
+  position: relative;
+}
+#betContent .bet-detail-area .bet-cover-area .bet-cover {
+  width: 100%;
+  height: 0;
+  padding-top: 40%;
+  background: url("/public/build/img/activity/page/bet/bet_bg.png") 0 0 no-repeat;
+  background-size: cover;
+}
+#betContent .bet-detail-area .bet-cover-area .bet-time-area {
+  position: absolute;
+  bottom: 0.24rem;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+#betContent .bet-detail-area .bet-cover-area .bet-time-area .bet-time {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+#betContent .bet-detail-area .bet-info {
+  padding: 0 0.3rem;
+  text-align: justify;
+}
+#betContent .bet-detail-area .bet-info .bet-title {
+  font-size: 18px;
+  font-family: PingFangSC-Medium;
+  color: #202020;
+  line-height: 25px;
+  margin-top: 15px;
+}
+#betContent .bet-detail-area .bet-info .bet-intro {
+  font-size: 15px;
+  color: #7a7a7a;
+  line-height: 22px;
+  margin-top: 11px;
+}
+#betContent .bet-btn-area {
+  padding: 0 0.3rem;
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#betContent .bet-btn-area .bet-btn {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 48%;
+  height: 0;
+  padding-top: 20.6%;
+  font-size: 0.32rem;
+  color: #202020;
+}
+#betContent .bet-btn-area .bet-btn-left {
+  background: url("/public/build/img/activity/page/bet/bet_btn_option_yellow.png") 0 0 no-repeat;
+  background-size: cover;
+}
+#betContent .bet-btn-area .bet-btn-right {
+  margin-left: 4%;
+  background: url("/public/build/img/activity/page/bet/bet_btn_option_red.png") 0 0 no-repeat;
+  background-size: cover;
+}
+#betContent .bet-btn-area .bet-btn .text {
+  position: absolute;
+  bottom: 16%;
+  width: 100%;
+  text-align: center;
+}
+#betContent .bet-jackpot-area {
+  margin-top: 27px;
+  padding: 0 0.3rem;
+}
+#betContent .bet-jackpot-area .side-data-area {
+  font-size: 11px;
+  font-family: TrebuchetMS-Regular;
+  color: #9c9c9c;
+}
+#betContent .bet-jackpot-area .side-data-area .side-data-right {
+  float: right;
+}
+#betContent .bet-jackpot-area .jackpot {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+#betContent .bet-jackpot-area .jackpot .jackpot-side {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+#betContent .bet-jackpot-area .jackpot .jackpot-side-left {
+  background-color: #FBA73B;
+  border-radius: 5px 0 0 5px;
+}
+#betContent .bet-jackpot-area .jackpot .jackpot-side-right {
+  background-color: #F46A4D;
+  border-radius: 0 5px 5px 0;
+}
+#betContent .bet-jackpot-area .jackpot-data-area {
+  margin-top: 13px;
+  font-size: 11px;
+  color: #7A7A7A;
+  text-align: center;
+}
+#betContent .bet-jackpot-area .jackpot-data-area .jackpot-data {
+  font-size: 20px;
+  font-family: TrebuchetMS-Regular;
+  color: #202020;
+  margin: 0 2px;
+}
+#betContent .bet-jackpot-area .jackpot-data-area .separator {
+  font-size: 20px;
+  color: #979797;
+}
+#betContent .bet-jackpot-area .time-bonus-area {
+  width: 100%;
+  font-size: 11px;
+  position: relative;
+  text-align: center;
+  margin-top: 20.5px;
+}
+#betContent .bet-jackpot-area .time-bonus-area .time-bonus-content {
+  padding: 1px 6px;
+  background: #3B3B3B;
+  border-radius: 100px;
+  font-size: 11px;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+}
+#betContent .bet-jackpot-area .time-bonus-area .time-bonus-content .time-bonus {
+  font-size: 14px;
+  font-family: TrebuchetMS-Regular;
+  color: #FAD63A;
+}
+#betContent .bet-jackpot-area .time-bonus-area .time-bonus-content .arrow-right {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 3px;
+  background: url("/public/build/img/activity/page/bet/bet_img_arrow_white.png") 0 0 no-repeat;
+  background-size: contain;
+}
+#betContent .bet-tips-area {
+  margin-top: 25px;
+  padding: 0 15px;
+  text-align: justify;
+  font-size: 11px;
+  font-family: PingFangSC-Light;
+  color: #7A7A7A;
+}
+#betContent .bet-tips-area .bet-result {
+  margin-top: 8px;
+}
+#betContent .my-bet-record-area {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+}
+#betContent .my-bet-record-area .my-bet-record-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 9px;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list {
+  width: 100%;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail {
+  font-size: 15px;
+  color: #202020;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .icon-dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 7px 5px 0;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: #d8d8d8;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .option-name {
+  font-style: normal;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .option-name-left {
+  color: #FBA73B;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .option-name-right {
+  color: #F46A4D;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .icon-beans {
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  margin: 0 4px;
+  vertical-align: text-top;
+  background: url("/public/build/img/activity/page/bet/bet_img_hudou.png") 0 0 no-repeat;
+  background-size: cover;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .my-bet-detail .num-beans {
+  font-style: normal;
+  font-family: TrebuchetMS-Regular;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .bet-time {
+  margin: 6px 0 0 13px;
+  font-size: 11px;
+  font-family: Helvetica-Light;
+  color: #9C9C9C;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record .time-bonus {
+  position: absolute;
+  right: 9px;
+  top: 3px;
+  font-size: 11px;
+  color: #9C9C9C;
+}
+#betContent .my-bet-record-area .my-bet-record-content .my-bet-record-list .my-bet-record-result .my-bet-detail .icon-dot {
+  background-color: #fad63a;
+}

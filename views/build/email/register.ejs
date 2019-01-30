@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智·御未来-亚信安全巡展</title>
+    <style>
+        * {margin: 0;padding: 0;}body {font-family:'Microsoft YaHei';}.container {width: 800px;margin:0 auto;text-align: center;}.item {margin-top: 20px;color: #333333;font-size: 14px;}.thanks {margin-top: 35px;font-size: 14px;line-height: 20px;color: #000000;text-align: left;padding-left: 106px;}label {margin-left: -10px;}.input-commom {width: 438px;height: 20px;margin-left: 30px;}.fullname .input-commom {margin-left:40px;}.submit {height: 58px;width: 122px;font-size: 18px;color: white;cursor: pointer;background-image: url('/public/build/img/submit.png');border-radius: 11px;}.item.sub {margin-top:40px;}.alert {color:red;text-align:left;padding-left:235px;display:none}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="topImg">
+        <img src="/public/build/img/banner001.jpg" alt="智·御未来">
+    </div>
+    <p class="thanks">感谢您对亚信安全的关注与支持，请填写下面的注册信息！</p>
+    <form action="/register" method="post" autocomplete="off">
+        <div class="item">
+            <label for="username">*姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="username" name="username" class="input-commom no-empty" data-pass="false">
+            <p id="username_alert" class="alert">请输入正确的姓名</p>
+        </div>
+        <div class="item fullname">
+            <label for="company">*公司全称：</label>
+            <input type="text" id="company" name="company" class="input-commom no-empty" data-pass="false">
+            <p id="company_alert" class="alert">请输入正确的公司全称</p>
+        </div>
+        <div class="item">
+            <label for="duty">*职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="duty" name="duty" class="input-commom no-empty" data-pass="false">
+            <p id="duty_alert" class="alert">请输入正确的职称</p>
+        </div>
+        <div class="item">
+            <label for="tel">*手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="tel" name="tel" class="input-commom" data-pass="false">
+            <p id="tel_alert" class="alert">请输入正确的手机</p>
+        </div>
+        <div class="item">
+            <label for="email">*邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="email" name="email" class="input-commom" data-pass="false">
+            <p id="email_alert" class="alert">请输入正确的邮箱</p>
+        </div>
+        <input type="hidden" id="city" name="city" value="">
+        <div class="item sub">
+            <input type="submit" value="" class="submit" id="submit">
+        </div>
+    </form>
+</div>
+<script>
+    window.onload = function () {
+        // 隐藏城市表单填值
+        (function () {
+            var dCity = document.getElementById('city');
+            function getQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+                var result = window.location.search.substr(1).match(reg);
+                if (result!=null) {
+                    return result[2];
+                } else {
+                    return null;
+                }
+            }
+            dCity.value = getQueryString('city');
+        })();
+
+        // 表单验证
+        (function () {
+            var _dInputs = document.getElementsByClassName('input-commom');
+            var _dNoEmpty = document.getElementsByClassName('no-empty'); // 不包括手机和邮箱
+            var _dTel = document.getElementById('tel');
+            var _dEmail = document.getElementById('email');
+            var _dSubmit = document.getElementById('submit');
+            function fDisSub() {
+                _dSubmit.disabled = true;
+            }
+            function fAbleSub() {
+                var _bFlag = true;
+                for (var j = 0,len = _dInputs.length; j < len; j++) {
+                    var _dVal = _dInputs[j];
+                    if (_dVal.getAttribute('data-pass')=='false') {
+                        _bFlag = false;
+                    }
+                    console.log(j);
+                }
+                if (_bFlag) {
+                    _dSubmit.disabled = false;
+                }
+            }
+            fDisSub();
+            // 非空验证
+            for (var i = 0,len = _dNoEmpty.length; i < len; i++) {
+                var _dValue = _dNoEmpty[i];
+                _dValue.onblur = _dValue.onkeyup = function () {
+                    var _sId = this.getAttribute('id');
+                    var _dAlert = document.getElementById(_sId+'_alert');
+                    if (this.value.trim() != '') {
+                        this.setAttribute('data-pass','true');
+                        _dAlert.style.display = 'none';
+                        fAbleSub();
+                    }else {
+                        _dAlert.style.display = 'block';
+                    }
+                }
+            }
+            // 电话验证
+            _dTel.onblur = _dTel.onkeyup = function () {
+                var _rReg = /^1[34578]\d{9}$/;
+                var _sId = _dTel.getAttribute('id');
+                var _dAlert = document.getElementById(_sId+'_alert');
+                if(_rReg.test(_dTel.value)){
+                    _dTel.setAttribute('data-pass','true');
+                    _dAlert.style.display = 'none';
+                    fAbleSub();
+                }else {
+                    _dAlert.style.display = 'block';
+                }
+            }
+            // 邮箱验证
+            _dEmail.onblur = _dEmail.onkeyup = function () {
+                var _rReg =  /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+                var _sId = _dEmail.getAttribute('id');
+                var _dAlert = document.getElementById(_sId+'_alert');
+                if(_rReg.test(_dEmail.value)){
+                    _dEmail.setAttribute('data-pass','true');
+                    _dAlert.style.display = 'none';
+                    fAbleSub();
+                }else {
+                    _dAlert.style.display = 'block';
+                }
+            }
+
+        })();
+
+    }
+</script>
+</body>
+</html>

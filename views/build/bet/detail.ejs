@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <% include ../common/head.ejs %>
+    <link rel="stylesheet" href="<%= baseUrl %>/css/activity/page/bet/detail.css">
+    <title><%=betInfo?betInfo.title||"":""%></title>
+</head>
+<body>
+<%if(betInfo && betInfo.delete_status >= 0){%>
+<div id="m-container">
+    <article id="betContent">
+        <a class="list-link" href="<%= domain +"/activity/list"%>" onclick="_hmt.push(['_trackEvent', 'list_link', 'click'])">
+            <i class="icon-guess"></i><span class="text">更多竞猜等着你~</span>
+            <span class="right">去看看<i class="icon-arrow-right"></i></span>
+        </a>
+        <div class="bet-detail-area">
+            <div class="bet-cover-area">
+                <%
+                var sCoverUrl = betInfo.topic_cover_big ? betInfo.topic_cover_big.url : "";
+                var sCoverBg = sCoverUrl ? "background-image:url(" + sCoverUrl + ");" : "";
+                %>
+                <div class="bet-cover" style="<%= sCoverBg %>"></div>
+                <div class="bet-time-area">
+                    <span class="bet-time"></span>
+                </div>
+            </div>
+            <div class="bet-info">
+                <div class="bet-title"><%= betInfo.title %></div>
+                <div class="bet-intro"><%= betInfo.description %></div>
+            </div>
+        </div>
+        <% if(betInfo.topic_options && betInfo.topic_options.length >= 2){
+            var aTopic_options = betInfo.topic_options;
+        %>
+        <div class="bet-btn-area clearfix">
+            <a class="bet-btn bet-btn-left bet-btn-<%= aTopic_options[0].id %>" id="bet-btn-<%= aTopic_options[0].id %>" data-id="<%= aTopic_options[0].id %>" data-index="0" data-pos="left" href="javascript:" onclick="_hmt.push(['_trackEvent', 'guess_option', 'click'])">
+                <span class="text"><%= aTopic_options[0].option_content %></span>
+            </a>
+            <a class="bet-btn bet-btn-right bet-btn-<%= aTopic_options[1].id %>" id="bet-btn-<%= aTopic_options[1].id %>" data-id="<%= aTopic_options[1].id %>" data-index="1" data-pos="right" href="javascript:" onclick="_hmt.push(['_trackEvent', 'guess_option', 'click'])">
+                <span class="text"><%= aTopic_options[1].option_content %></span>
+            </a>
+        </div>
+        <div class="bet-jackpot-area">
+            <div class="jackpot-content none">
+                <div class="side-data-area clearfix">
+                    <span class="side-data side-data-left side-data-<%= aTopic_options[0].id %>">0狐币/0人次</span>
+                    <span class="side-data side-data-right side-data-<%= aTopic_options[1].id %>">0狐币/0人次</span>
+                </div>
+                <div class="jackpot clearfix">
+                    <span class="jackpot-side-left jackpot-side jackpot-side-<%= aTopic_options[0].id %>"></span>
+                    <div class="jackpot-side-right jackpot-side jackpot-side-<%= aTopic_options[1].id %>"></div>
+                </div>
+                <div class="jackpot-data-area">
+                    狐币<span class="jackpot-data jackpot-data-jetton">0</span> <span class="separator">/</span> <span
+                            class="jackpot-data jackpot-data-actor">0</span>人次
+                </div>
+            </div>
+            <div class="time-bonus-area none">
+                <div class="time-bonus-content" id="time-bonus-content" onclick="_hmt.push(['_trackEvent', 'time_bonus', 'click'])">
+                    当前时间加成<span class="time-bonus-now">0</span><i class="arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <% } %>
+        <div class="bet-tips-area">
+            <div class="bet-tips clearfix">
+                <p class="published-reason"><%= betInfo.published_reason %></p>
+                <a class="bet-rule-link" href="http://18525bc38e188.cdn.sohucs.com/client/bet/rule_act.html" id="guess-rule-tips" onclick="_hmt.push(['_trackEvent', 'guess_rule', 'click'])">规则说明<i class="arrow-right"></i></a>
+            </div>
+            <div class="bet-result none">
+                揭晓结果：<span class="bet-result-text"><%= betInfo.result_detail %></span>
+            </div>
+        </div>
+        <div class="bet-rank-area">
+            <div class="bet-rank-content">
+                <div class="bet-rank-title-area">
+                    <span class="line"></span>
+                    <span class="bet-rank-title"></span>
+                </div>
+                <ul class="bet-rank-list">
+                   <!-- <li class="rank-item">
+                        <div class='rank-item-info'>
+                            <span class='rank-item-order-1 rank-item-order'></span>
+                            <span class='avatar'  style=''></span>
+                            <span class='uname'>搜狐网友187****5809</span>
+                        </div>
+                        <div class='win-item-count'>赢了<span class="icon-beans"></span>×<span class="win-beans">2000万</span></div>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="my-bet-record-area">
+            <div class="my-bet-record-content">
+                <ul class="my-bet-record-list">
+                    <li class="btn-area btn-area-show">
+                        <span class="btn-show-full-record btn"><i class="icon-arrow-down icon-arrow"></i></span>
+                    </li>
+                    <li class="btn-area btn-area-hide">
+                        <span class="btn-hide-record btn"><i class="icon-arrow-up icon-arrow"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-chips-area">
+            <i class="icon-beans"></i>
+            <div class="my-chips-content">
+                <span class="my-chips">0</span>
+            </div>
+        </div>
+        <div class="popBox popBox-tips">
+            <div class="popBox-content">
+                <div class="text-content">
+                    <p>时间加成：计算赢得狐币的影响因子之一</p>
+                    <p class="line-2rd"><i class="icon-dot"></i>投得越早，时间加成越大，收益越高</p>
+                </div>
+                <div class="line">
+                    <span class="btn-cancel">我知道了</span>
+                </div>
+                <div class="line">
+                    <a class="link-rule" href="http://18525bc38e188.cdn.sohucs.com/client/bet/rule_act.html" id="guess-rule-popTips" onclick="_hmt.push(['_trackEvent', 'guess_rule', 'click'])">查看规则说明<i class="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="popBox popBox-bind">
+            <div class="popBox-content">
+                <div class="title-area">
+                    <i class="corner-right corner"></i>
+                    <p class="title">
+                        <i class="icon-fox"></i>
+                        <i class="icon-text-bind"></i>
+                    </p>
+                </div>
+                <p class="text-slogan">～真相只有一个，谁是真正推理王～</p>
+                <div class="phone-input-area">
+                    <input class="phone-num-bind" type="tel" placeholder="请输入手机号">
+                </div>
+                <p class="tips-area"></p>
+                <div class="btn-area">
+                    <span class="btn-cancel btn">取消</span>
+                    <span class="btn-confirm btn" onclick="_hmt.push(['_trackEvent', 'phone_bind_confirm', 'click'])">确定</span>
+                </div>
+            </div>
+        </div>
+        <div class="popBox popBox-bet">
+            <div class="popBox-content">
+                <div class="title-area">
+                    <i class="corner-left corner"></i>
+                    <i class="corner-right corner"></i>
+                    <p class="title">已选“<span class="option-name"></span>”，请投狐币</p>
+                </div>
+                <div class="chips-area">
+                    <p><span class="text">可用狐币数：</span><i class="icon-beans"></i>x<span class="my-chips">0</span></p>
+                </div>
+                <div class="bet-chips-select-area clearfix">
+                    <% var nGuessNumberLen = betInfo.guess_number.length; %>
+                    <% if(nGuessNumberLen<=3){ %>
+                    <% for(var i = 0;i < nGuessNumberLen;i++){ %>
+                    <% var _nGussNumber = betInfo.guess_number[i] %>
+                    <a href="javascript:" class="bet-chips-select btn" id="bet-chips-select-<%= _nGussNumber %>" data-num="<%= _nGussNumber %>" onclick="_hmt.push(['_trackEvent', 'bet_option_btn', 'click'])"><%= _nGussNumber %></a>
+                    <% } %>
+                    <a href="javascript:" class="bet-chips-select input on" id="bet-chips-select-input" onclick="_hmt.push(['_trackEvent', 'bet_option_input', 'click'])"><input class="bet-chips-input" data-type="int" type="tel" placeholder="" value="其他"></a>
+                    <% }else{ %>
+                    <div class="btn-select-content clearfix">
+                        <% for(var i = 0;i < nGuessNumberLen;i++){ %>
+                        <% var _nGussNumber = betInfo.guess_number[i] %>
+                        <a href="javascript:" class="bet-chips-select btn" id="bet-chips-select-<%= _nGussNumber %>" data-num="<%= _nGussNumber %>" onclick="_hmt.push(['_trackEvent', 'bet_option_btn', 'click'])"><%= _nGussNumber %></a>
+                        <% } %>
+                        <a href="javascript:" class="bet-chips-select input on" id="bet-chips-select-input" onclick="_hmt.push(['_trackEvent', 'bet_option_input', 'click'])"><input class="bet-chips-input" data-type="int" type="tel" placeholder="" value="其他"></a>
+                        <span class="placeholder"></span>
+                    </div>
+                    <% } %>
+                </div>
+                <p class="tips-area"></p>
+                <div class="btn-area">
+                    <span class="btn-cancel btn">取消</span>
+                    <span class="btn-confirm btn" id="btn-comfirm-bet" onclick="_hmt.push(['_trackEvent', 'bet_confirm', 'click'])">确定</span>
+                </div>
+                <div class="bottom-info clearfix">
+                    <p class="info-block">当前时间加成 <em class="time-bonus-now"></em></p>
+                    <p class="info-block tc"><a href="http://18525bc38e188.cdn.sohucs.com/client/bet/rule_act.html" id="guess-rule-betBox" onclick="_hmt.push(['_trackEvent', 'guess_rule', 'click'])">查看规则说明</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="popTips-bet-success">
+            <span class="icon-pass"></span>
+            <p>参与成功</p>
+        </div>
+        <div class="popTips">
+            <span class="popTips-content"></span>
+        </div>
+        <img style="width:0;height:0;position:absolute;" src="<%= baseUrl %>/img/activity/page/bet/bet_img_share.png" alt="分享缩略图">
+    </article>
+
+    <!--<div id="commentsContent" class="relate-content"></div>-->
+    <div id="recommendContent" class="relate-content" onclick="_hmt.push(['_trackEvent', 'recommend_article', 'click'])"></div>
+</div>
+<div class="overlay"></div>
+<div id="new-chip">
+    <div class="new-chip-content">
+        <span class="icon-sunshine"></span>
+        <span class="icon-beans-box"></span>
+        <span class="icon-beans-num"></span>
+        <span class="icon-star"></span>
+    </div>
+    <span class="icon-tips"></span>
+</div>
+<script>
+    window.global = window.global || {};
+    global.domain = '<%= domain%>'
+    global.betId = '<%= betInfo.article_id %>';
+    global.betTimes = {
+        startTime: "<%= +betInfo.start_time*1000 %>",
+        endTime: "<%= +betInfo.deadline_time*1000 %>",
+        announceTime: "<%= +betInfo.end_time*1000 %>"
+    };
+    global.options = '<%- JSON.stringify(betInfo.topic_options) %>';
+    global.relateArticles = '<%- JSON.stringify(betInfo.topic_relate_articles)%>';
+</script>
+<script type="text/javascript" src="<%= baseUrl %>/js/activity/lib/zepto.js"></script>
+<script type="text/javascript" src="<%= baseUrl %>/js/activity/plugin/jstween.js"></script>
+<script type="text/javascript" src="<%= baseUrl %>/js/activity/common/common.js"></script>
+<script type="text/javascript" src="<%= baseUrl %>/js/activity/page/asyncshare.js"></script>
+<script type="text/javascript" src="<%= baseUrl %>/js/activity/page/bet/detail.js"></script>
+<%}else{%>
+    <%include deleted.ejs%>
+<%}%>
+</body>
+</html>
+
+

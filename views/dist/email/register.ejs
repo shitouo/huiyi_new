@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>亚信安全巡展</title>
+    <style type="text/css">
+        <!--
+        body,td,th {
+            font-family: 微软雅黑;
+            font-size: 14px;
+        }
+        body {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: #FFFFFF;
+        }
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+            color: #333333;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #333333;
+        }
+        a:active {
+            text-decoration: none;
+            color: #333333;
+        }
+        -->
+    </style>
+</head>
+
+<body>
+<form action="/register" method="post" id="thisform" name="thisform">
+    <!--<input type="hidden" id="actiontype" name="actiontype" value="">-->
+    <input type="hidden" id="city" name="city" value="">
+    <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#EAE6E5">
+        <tr>
+            <td><img src="/public/build/img/banner001.jpg" width="800" height="233" border="0" /></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="587" align="center">
+                    <tbody>
+                    <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                                <tr>
+                                    <td align="left" valign="top"  style="font-family:微软雅黑; font-size:14px; color:#000000; line-height:20px;">感谢您对亚信安全的关注与支持，请填写下面的注册信息！ </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left" valign="top"><img src="/public/build/img/ttt00.jpg" width="5" height="8" /></td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="6" cellpadding="2">
+                                <tr>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;">*姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;"><input type="text" name="username" id="chinesename" style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>
+                                <tr>
+                                    <td width="21%" align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px; ">*公司全称：</td>
+                                    <td width="79%" align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;"><input type="text" name="company" id="companyname" style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>
+                                <!--<tr>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px;">*部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：</td>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px;"><input type="text" name="group" id="group" datatype="*" nullmsg="请填写部门！" errormsg="请填写部门！" / style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>-->
+                                <tr>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;">*职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：</td>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;"><input type="text" name="duty" id="position" style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;">*手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</td>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;"><input type="text" name="tel" id="mobile" style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;">*邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
+                                    <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:36px;"><input type="text" name="email"  id="email"  style="width:99%; height:20px; font-family:微软雅黑; font-size:14px; color:#333333; " /></td>
+                                </tr>
+                                <!--<tr>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px; ">&nbsp;所属行业：</td>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px;"><select name="industry" id="industry"   style="width:100%; font-family:微软雅黑; font-size:14px; color:#333333; height:22px;" >
+                                      <option value="">--请选择--</option>
+                                      <option value="金融">金融</option>
+                                      <option value="医疗">医疗</option>
+                                      <option value="政府">政府</option>
+                                      <option value="科研教育">科研教育</option>
+                                      <option value="制造">制造</option>
+                                      <option value="酒店/旅游休闲">酒店/旅游休闲</option>
+                                      <option value="交通运输">交通运输</option>
+                                      <option value="批发零售">批发零售</option>
+                                      <option value="能源">能源</option>
+                                      <option value="媒体">媒体</option>
+                                      <option value="电信">电信</option>
+                                      <option value="餐饮娱乐">餐饮娱乐</option>
+                                      <option value="IT及高科技">IT及高科技</option>
+                                      <option value="其他">其他</option>
+                                  </select></td>
+                                </tr>
+                                   <tr>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px; ">&nbsp;近期是否有采购需求：</td>
+                                  <td align="left" bgcolor="#FFFFFF" style="font-family:微软雅黑; font-size:14px; color:#333333; padding-left:5px; line-height:26px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="3%"><input type="radio" name="demand" value="是" checked="checked" /></td>
+                                      <td width="13%">是</td>
+                                      <td width="3%"><input type="radio" name="demand" value="否" /></td>
+                                      <td width="81%">否</td>
+                                    </tr>
+                                  </table></td>
+                                   </tr>-->
+                            </table>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td style="padding-top:5px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input type="image" onClick="return save();" src="/public/build/img/submit.png" width="200" height="51" border="0" /></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:10px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function () {
+        (function () {
+            var dCity = document.getElementById('city');
+            function getQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+                var result = window.location.search.substr(1).match(reg);
+                if (result!=null) {
+                    return result[2];
+                } else {
+                    return null;
+                }
+            }
+            dCity.value = getQueryString('city');
+            if (getQueryString('a') == 1) {
+                alert('恭喜您注册成功！');
+                window.location = window.location + "1";
+            }
+        })();
+    }
+    function save(){
+        //alert("123");
+        var company=document.getElementById("companyname").value;
+        //alert(company);
+        var realname=document.getElementById("chinesename").value;
+        //alert(realname);
+        //var department=document.getElementById("department").value;
+        //alert(department);
+        var position=document.getElementById("position").value;
+// alert(position);
+        var mobile=document.getElementById("mobile").value;
+        //alert(mobile);
+        var email=document.getElementById("email").value;
+// alert(email);
+        //var industry=document.getElementById("industry").value;
+// alert(industry);
+
+        if (realname=="" || realname=="请输入姓名")
+        {
+            alert("姓名不能为空");
+            document.getElementById("chinesename").focus();
+            return false;
+
+        }
+
+        if (company=="" || company=="请输入公司名称")
+        {
+            alert("公司名称不能为空");
+            document.getElementById("companyname").focus();
+            return false;
+
+        }
+
+//if (department=="" || department=="请输入部门名称")
+//{
+        //alert("部门名称不能为空");
+        //document.getElementById("department").focus();
+        //return false;
+
+//}
+
+        if (position=="" || position=="请输入职务")
+        {
+            alert("职务不能为空");
+            document.getElementById("position").focus();
+            return false;
+
+        }
+
+        if (mobile=="" || mobile=="请输入手机号码")
+        {
+            alert("请输入手机号码");
+            document.getElementById("mobile").focus();
+            return false;
+
+        }else{
+            pattern = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+            if (!pattern.test(mobile)) {
+                alert("请填写正确的电话！");
+                document.getElementById("mobile").focus();
+                return false;
+            }
+        }
+
+        if (email=="" || email=="请输入邮箱")
+        {
+            alert("邮箱不能为空");
+            document.getElementById("email").focus();
+            return false;
+
+        }else{
+
+            pattern = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if (!pattern.test(email)) {
+                alert("请填写正确的邮箱！");
+                document.getElementById("email").focus();
+                return false;
+            }
+
+
+        }
+//if (industry=="" || industry=="请选择行业")
+//{
+        //alert("行业不能为空");
+        //document.getElementById("industry").focus();
+        //return false;
+
+//}
+        document.getElementById("actiontype").value="save"
+        document.getElementById("thisform").submit();
+        return true;
+
+    }
+
+</script>

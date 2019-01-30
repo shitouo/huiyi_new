@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .please {
+            font-size: 18px;
+            color: red;
+        }
+        .submit {
+            margin-top: 20px;
+            width: 200px;
+            height: 51px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            font-size:16px;
+            border-radius: 5px;
+        }
+        .item {
+            margin-top:20px;
+        }
+        .input-common {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div>
+        <img src="/public/build/img/banner001.jpg">
+    </div>
+    <p class="please">请登录</p>
+    <form action="/login" method="post">
+        <div class="item">
+            <label for="user">用户名</label>
+            <input type="text" id="user" name="user" class="input-common">
+        </div>
+        <div class="item">
+            <label for="psd">密码</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="psd" name="psd" class="input-common">
+        </div>
+        <div class="item">
+            <input type="submit" value="登录" class="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

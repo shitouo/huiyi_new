@@ -1,0 +1,224 @@
+[2017-04-08 21:12:42.337] [ERROR] index - { Error: ER_BAD_FIELD_ERROR: Unknown column 'oDb.city' in 'field list'
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:38:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }
+[2017-04-08 21:25:03.492] [ERROR] index - { Error: ER_BAD_FIELD_ERROR: Unknown column 'oDb.city' in 'field list'
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:38:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }
+[2017-04-08 21:59:05.461] [ERROR] index - { Error: ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'tel' at row 1
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:39:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_WARN_DATA_OUT_OF_RANGE',
+  errno: 1264,
+  sqlState: '22003',
+  index: 0 }
+[2017-04-08 22:00:49.235] [ERROR] index - { Error: ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'tel' at row 1
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:39:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_WARN_DATA_OUT_OF_RANGE',
+  errno: 1264,
+  sqlState: '22003',
+  index: 0 }
+[2017-04-08 22:02:50.898] [ERROR] index - { Error: ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'tel' at row 1
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:39:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_WARN_DATA_OUT_OF_RANGE',
+  errno: 1264,
+  sqlState: '22003',
+  index: 0 }
+[2017-04-08 22:03:58.464] [ERROR] index - { Error: ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'tel' at row 1
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:39:24
+    at Handshake.onConnect (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Handshake.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_WARN_DATA_OUT_OF_RANGE',
+  errno: 1264,
+  sqlState: '22003',
+  index: 0 }
+[2017-04-08 22:23:29.000] [ERROR] index - { Error: ER_BAD_FIELD_ERROR: Unknown column '_nStart' in 'where clause'
+    at Query.Sequence._packetToError (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+    --------------------
+    at Protocol._enqueue (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+    at PoolConnection.query (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:208:25)
+    at D:\life\life_work\email\proxy\mysql.js:20:24
+    at Ping.onOperationComplete [as _callback] (D:\life\life_work\email\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Ping.Sequence.OkPacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\sequences\Sequence.js:95:8)
+    at Protocol._parsePacket (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Parser.js:75:12)
+    at Protocol.write (D:\life\life_work\email\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (D:\life\life_work\email\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }

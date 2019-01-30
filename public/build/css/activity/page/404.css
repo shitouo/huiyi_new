@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "PingFangSC", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  text-align: justify;
+  background-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #4d4d4d;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  #m-container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+#topBarContent .top-bar {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  color: #fff;
+}
+#topBarContent {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+#topBarContent .top-bar {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  color: #fff;
+}
+#topBarContent .top-bar .logo,
+#topBarContent .top-bar .open,
+#topBarContent .top-bar .btn-close {
+  position: absolute;
+  top: 50%;
+}
+#topBarContent .top-bar .logo {
+  height: 40px;
+  width: 40px;
+  left: 15px;
+  background: url("/public/build/img/activity/common/logo.png") no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+#topBarContent .top-bar .label {
+  color: #fff;
+}
+#topBarContent .top-bar .label .app-name {
+  font-weight: 500;
+  position: absolute;
+  left: 64px;
+  top: 12px;
+  background: url("/public/build/img/activity/common/app-name.png") no-repeat;
+  height: 15.5px;
+  width: 100%;
+  background-size: auto 100%;
+}
+#topBarContent .top-bar .label .slogan {
+  position: absolute;
+  left: 64px;
+  bottom: 9px;
+  background: url("/public/build/img/activity/common/slogan.png") no-repeat;
+  height: 17px;
+  width: 100%;
+  background-size: auto 100%;
+}
+#topBarContent .top-bar .open {
+  right: 39px;
+  width: 77px;
+  font-size: 13px;
+  line-height: 30px;
+  border-radius: 14.5px;
+  background: #fad63a;
+  display: inline-block;
+  color: #5b4a00;
+  text-align: center;
+  margin-top: -13px;
+}
+#topBarContent .top-bar .btn-close {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url("/public/build/img/activity/common/btn-close.png") 0 0 no-repeat;
+  background-size: 100%;
+  right: 12px;
+  margin-top: -8px;
+}
+#notfound {
+  margin-top: 100px;
+  background: url("/public/build/img/activity/error/tower.png") 50% 50% no-repeat;
+  width: 100%;
+  height: 200px;
+}
+#tip {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}

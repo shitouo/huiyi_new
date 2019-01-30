@@ -1,0 +1,17 @@
+FROM mirrors.aliyun.com/help/docker-engine/node:6.2.0
+
+MAINTAINER h5group
+
+ADD . /opt/project
+
+WORKDIR /opt/project
+
+RUN mkdir -p /opt/project/static && npm install -g cnpm --registry=https://registry.npm.taobao.org && cnpm install && cnpm install pm2 -g
+
+RUN cnpm install --global gulp && gulp
+
+EXPOSE 8090
+
+ENTRYPOINT ["pm2-docker", "start", "app.js"]
+
+VOLUME /opt/project/static

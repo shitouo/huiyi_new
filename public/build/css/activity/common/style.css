@@ -1,0 +1,158 @@
+html {
+  font-size: 62.5%;
+}
+body,
+input,
+select,
+textarea {
+  font-family: "PingFangSC", "Microsoft YaHei", "微软雅黑", Arial, HelveticaNeue, Helvetica, sans-serif;
+}
+body {
+  padding: 0 16px;
+  background-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #4d4d4d;
+  margin: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu,
+label {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+@media screen and (min-width: 769px) {
+  #m-container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+.slide_hide {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.slide_show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.none {
+  display: none;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line-2 {
+  -webkit-line-clamp: 2;
+}
+.line-6 {
+  -webkit-line-clamp: 6;
+}
+.vertical-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
