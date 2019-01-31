@@ -30,7 +30,7 @@ module.exports = {
         host: '10.16.39.168'
     }],
     mysqlConfig: {
-        host: '127.0.0.1',
+        host: '%',
         user: 'root',
         password: 'sohuqwe123'
     },
