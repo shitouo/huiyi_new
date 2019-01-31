@@ -30,9 +30,9 @@ module.exports = {
         host: '10.16.39.168'
     }],
     mysqlConfig: {
-        host: '%',
+        host: 'localhost',
         user: 'root',
-        password: 'sohuqwe123'
+        password: 'password'
     },
     pageCount: 20
 };

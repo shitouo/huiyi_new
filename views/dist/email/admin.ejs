@@ -36,20 +36,16 @@
                         <td><table width="100%" border="1" cellspacing="0" cellpadding="0">
 
                                 <tr style="font-weight: bold;background-color: bisque;">
-                                    <td align="center" valign="center" width="80px">参会城市</td>
                                     <td align="center" valign="center" width="60px">姓名</td>
                                     <td align="center" valign="center" width="100px">公司</td>
-                                    <td align="center" valign="center" width="80px">职务</td>
                                     <td align="center" valign="center">手机</td>
                                     <td align="center" valign="center">邮箱</td>
                                     <td align="center" valign="center">注册时间</td>
                                 </tr>
                                 <% for(var i = 0,len = list_info.length; i < len; i++) {%>
                                     <tr class="<%=i % 2 === 0 ? '':'odd'%>">
-                                        <td><%=list_info[i].city%></td>
-                                        <td><%=list_info[i].username%></td>
+                                        <td><%=list_info[i].user%></td>
                                         <td><%=list_info[i].company%></td>
-                                        <td><%=list_info[i].duty%></td>
                                         <td><%=list_info[i].tel%></td>
                                         <td><%=list_info[i].email%></td>
                                         <td><%=list_info[i].regtime%></td>
