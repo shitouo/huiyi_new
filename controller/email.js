@@ -81,9 +81,9 @@ exports.downPage = function (req, res) {
             logger.error(err);
             return res.render("error/404");
         }
-        var _aData = [['参会城市', '姓名', '公司','职务','手机','邮箱','注册时间']];
+        var _aData = [['姓名', '公司','手机','邮箱','注册时间']];
         for (var i = 0, len = results.length; i < len; i++) {
-            _aData.push([results[i].city,results[i].username,results[i].company,results[i].duty,results[i].tel,results[i].email,results[i].regtime]);
+            _aData.push([results[i].user,results[i].company,results[i].tel,results[i].email,results[i].regtime]);
         }
         var buffer = xlsx.build([{name: "mySheetName", data: _aData}]); // Returns a buffer
         var filePath = './download/人员注册数据.xls';
