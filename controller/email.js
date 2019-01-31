@@ -47,33 +47,9 @@ exports.listPage = function (req, res) {
 
 // 存储到数据库
 exports.insertDB = function (req, res) {
-    var _sCityCode = req.body.city;
-    var _sCity;
-    switch (_sCityCode) {
-        case 'nn':
-            _sCity = '南宁';
-            break;
-        case 'nc':
-            _sCity = '南昌';
-            break;
-        case 'dl':
-            _sCity = '大连';
-            break;
-        case 'wh':
-            _sCity = '武汉';
-            break;
-        case 'jn':
-            _sCity = '济南';
-            break;
-        case 'nj':
-            _sCity = '南京';
-            break;
-    }
     var _oDb = {
-        _sUsername: req.body.username,
-        _sCity: _sCity,
+        _sUser: req.body.user,
         _sCompany: req.body.company,
-        _sDuty: req.body.duty,
         _nTel: req.body.tel,
         _sEmail: req.body.email,
     };

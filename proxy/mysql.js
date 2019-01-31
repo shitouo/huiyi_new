@@ -36,7 +36,7 @@ function fInsert(oDb,cb) {
             var _sMinutes = _sDate.getMinutes()<10?'0'+_sDate.getMinutes():_sDate.getMinutes();
             var _sSeconds = _sDate.getSeconds()<10?'0'+_sDate.getSeconds():_sDate.getSeconds();
             var _sRegtime = _sDate.toLocaleDateString()+' '+_sHours+ ':'+_sMinutes+':'+_sSeconds;
-            connection.query('INSERT INTO list SET ?',{ city:oDb._sCity+'',username:oDb._sUsername+'',company:oDb._sCompany+'',duty:oDb._sDuty+'',tel:oDb._nTel+'',email:oDb._sEmail+'',regtime:_sRegtime}, function (error, results, fields) {
+            connection.query('INSERT INTO list SET ?',{ user:oDb._sUser+'',company:oDb._sCompany+'',tel:oDb._nTel+'',email:oDb._sEmail+'',regtime:_sRegtime}, function (error, results, fields) {
                 connection.release();
                 if (error) {
                     return cb(error,null);
