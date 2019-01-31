@@ -30,9 +30,9 @@ module.exports = {
         host: '10.16.39.168'
     }],
     mysqlConfig: {
-        host: 'rm-2ze33712f63434d0gwo.mysql.rds.aliyuncs.com',
-        user: 'mukai',
-        password: 'Kaimuguan@'
+        host: '127.0.0.1',
+        user: 'root',
+        password: 'sohuqwe123'
     },
     pageCount: 20
 };
