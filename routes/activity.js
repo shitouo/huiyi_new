@@ -5,6 +5,9 @@ var email = require('../controller/email');
 // 注册页面
 router.get('/register',email.regPage);
 
+// 英文注册页面
+router.get('/register_en',email.regPage);
+
 // 接收注册数据
 router.post('/register',email.insertDB);
 

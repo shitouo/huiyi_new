@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,input,select,textarea {
+            font-family: PingFangSC,"Microsoft YaHei","微软雅黑",Arial,HelveticaNeue,Helvetica,sans-serif
+        }
+
+        .container {
+            width: 1200px;
+            height: 1867px;
+            background: url('http://article-h5.bjcnc.scs.sohucs.com/mumu/img/container_02.jpeg');
+            margin: 0 auto;
+            overflow: hidden; 
+        }
+        .apply {
+            width: 680px;
+            height: 1010px;
+            margin: 550px auto 0;
+            background-color: white;
+            overflow: hidden;
+            position: relative;
+            padding-top: 70px;
+            border-radius: 16px;
+            box-sizing: border-box;
+        }
+        input {
+            display: block;
+            width: 513px;
+            height: 100px;
+            border: 0 none;
+            margin: 100px auto 0;
+            font-size: 20px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .line {
+            height: 1px;
+            width: 513px;
+            margin: -31px auto 0;
+            background-color: black;
+        }
+        .btn {
+            display: block;
+            width: 303px;
+            height: 87px;
+            margin: 84px auto 0;
+            font-size: 20px;
+            background-color: #9775e5;
+            color: white;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function checkPost() {
+            if (applyForm.company.value === '') {
+                alert('Please input Company Name');
+                applyForm.company.focus();
+                return false;
+            }
+            if (applyForm.user.value === '') {
+                alert('Please input Name');
+                applyForm.user.focus();
+                return false;
+            }
+            if (applyForm.tel.value === '') {
+                alert('Please input Tel');
+                applyForm.tel.focus();
+                return false;
+            }
+            if (applyForm.email.value === '') {
+                alert('Please input Email');
+                applyForm.email.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <div class="container">
+        <div class="apply">
+            <form action="/register" method="POST" onsubmit="return checkPost();" name="applyForm" >
+                <input type="text" placeholder="Company Name" name="company">
+                <div class="line"></div>
+                <input type="text" placeholder="Name" name="user">
+                <div class="line"></div>
+                <input type="tel" placeholder="Tel" name="tel">
+                <div class="line"></div>
+                <input type="email" placeholder="Email" name="email">
+                <div class="line"></div>
+                <button class="btn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function getQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+                var result = window.location.search.substr(1).match(reg);
+                if (result!=null) {
+                    return result[2];
+                } else {
+                    return null;
+                }
+        }
+        if (getQueryString('a') == 1) {
+                alert('Registration success！');
+                window.location = window.location + "1";
+        }
+    </script>
+</body>
+</html>

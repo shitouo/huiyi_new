@@ -69,6 +69,11 @@ exports.regPage = function (req, res) {
     res.render('email/register');
 };
 
+// 英文注册页面
+exports.regPage = function (req, res) {
+    res.render('email/register_en');
+};
+
 // 后台登录页面
 exports.loginPage = function (req, res) {
     res.render('email/login');
