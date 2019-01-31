@@ -29,8 +29,12 @@ function fSelect(page,cb) {
 
 function fInsert(oDb,cb) {
     pool.getConnection(function (err,connection) {
+        console.log(44444)
         if (err) {
+            console.log(666)
+            console.log(err)
         }else {
+            console.log(5555)
             var _sDate = new Date();
             var _sHours = _sDate.getHours()<10?'0'+_sDate.getHours():_sDate.getHours();
             var _sMinutes = _sDate.getMinutes()<10?'0'+_sDate.getMinutes():_sDate.getMinutes();

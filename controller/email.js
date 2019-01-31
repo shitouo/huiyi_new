@@ -53,12 +53,13 @@ exports.insertDB = function (req, res) {
         _nTel: req.body.tel,
         _sEmail: req.body.email,
     };
+    console.log(333333)
     mysql.fInsert(_oDb,function (err, result) {
         if (err) {
             logger.error(err);
             return res.render("error/404");
         }else {
-            res.redirect(303,'/register?city='+_sCityCode+'&a=1');
+            res.redirect(303,'/register?'+'&a=1');
         }
     });
 };
