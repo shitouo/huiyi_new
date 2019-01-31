@@ -53,13 +53,30 @@ exports.insertDB = function (req, res) {
         _nTel: req.body.tel,
         _sEmail: req.body.email,
     };
-    console.log(333333)
     mysql.fInsert(_oDb,function (err, result) {
         if (err) {
             logger.error(err);
             return res.render("error/404");
         }else {
             res.redirect(303,'/register?'+'&a=1');
+        }
+    });
+};
+
+// 存储到数据库英文
+exports.insertDB_en = function (req, res) {
+    var _oDb = {
+        _sUser: req.body.user,
+        _sCompany: req.body.company,
+        _nTel: req.body.tel,
+        _sEmail: req.body.email,
+    };
+    mysql.fInsert(_oDb,function (err, result) {
+        if (err) {
+            logger.error(err);
+            return res.render("error/404");
+        }else {
+            res.redirect(303,'/register_en?'+'&a=1');
         }
     });
 };

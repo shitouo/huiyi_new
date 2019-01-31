@@ -11,6 +11,9 @@ router.get('/register_en',email.regPageEn);
 // 接收注册数据
 router.post('/register',email.insertDB);
 
+// 接收英文注册数据
+router.post('/register_en',email.insertDB_en);
+
 // 后台登录页面
 router.get('/login',email.loginPage);
 
