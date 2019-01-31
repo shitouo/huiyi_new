@@ -70,7 +70,7 @@ exports.regPage = function (req, res) {
 };
 
 // 英文注册页面
-exports.regPage = function (req, res) {
+exports.regPageEn = function (req, res) {
     res.render('email/register_en');
 };
 
